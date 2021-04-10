@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website|Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+     body{
+          background:#ee6969; 
+        }
+    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/index.png" width="100px" alt="">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+
+
+                    <li><a href="products.html">Products</a></li>
+
+
+                    <li><a href="a.html">Account</a></li>
+
+
+                    <li><a href="products_details.html">special offers</a></li>
+
+                    <li><a href="buy.html">Your Buy</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav>
+            <img src="images/images/cart.png" width="30px">
+            <img src="images/images/menu.png" onclick="menutoggle()" class="menu-icon" width="30px">
+
+        </div>
+
+    </div>
+    <div class="center">
+        <h1>Login</h1>
+        <form action="" method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <label for="">Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label for="">password</label>
+            </div>
+            <div class="pass">Forgot password</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="b.html">Sign up</a>
+
+            </div>
+        </form>
+    </div>
+    
+   
+    <!--js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px"
+            }
+            else {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+   
+</body>
+
+</html>

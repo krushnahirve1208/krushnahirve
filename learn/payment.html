@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website|Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background: rgb(214, 63, 96);}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/index.png" width="100px" alt="">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+
+
+                    <li><a href="products.html">Products</a></li>
+
+
+                    <li><a href="a.html">Account</a></li>
+
+
+                    <li><a href="products_details.html">special offers</a></li>
+
+                    <li><a href="buy.html">Your Buy</a></li>
+                </ul>
+            </nav>
+            <img src="images/images/cart.png" width="30px">
+            <img src="images/images/menu.png" onclick="menutoggle()" class="menu-icon" width="30px">
+
+        </div>
+
+    </div>
+    <div class="small-container">
+        <div class="row">
+            <div class="pay">
+                <form action="">
+                    <h1>Pay & place order !</h1>
+                    <h3>User Information</h3>
+                    <p>Name:-<input type="text" name="name" required></input></p>
+                    <p>Address:-<textarea name="address" cols="90" rows="5" required></textarea> </p>
+                    <p>Email:-<input type="email" name="email" required></input></p>
+                    <p>Mobile no.:- <input type="number" name="mobile" required></input></p>
+                    
+                    <h3>Payment Details</h3>
+                    <p>Card-Type:-
+                        <select name="card" id="" required >
+                            <option value="card" value="" >--select a card type--</option>
+                            <option name="card" value="Visa">Visa</option>
+                            <option name="card" value="Rupay">Rupay</option>
+                            <option name="card" value="Mastercard">Mastercard</option>
+                            <option name="card" value="American Expreass">American Expreass</option>
+                        </select>
+                    </p>
+                    <p>Card no.:-<input type="number" required></input></p>
+                    <p> Expiry Date:-<input type="date" name="date" required></input></p>
+                    <p>CVV:-<input type="password" name="cvv" required></input></p>    
+                    <input type="button" class="pay" value="place order" >             
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--brands-->
+    <div class="brand">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/images/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-philips.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/images/logo-coca-cola.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our APP</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <div class="app-logo">
+                        <img src="images/images/play-store.png" alt="">
+                        <img src="images/images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img class="index" src="images/index.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Dicta, pariatur? </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog-post</li>
+                        <li>Return policy</li>
+                        <li>Join us</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#"><img src="images/insta.jpg" class="social" alt=""></a></li>
+                        <li><a href="#"><img src="images/mail.png" class="social" alt=""></a></li>
+                        <li><a href="#"><img src="images/fb.jpg" class="social" alt=""></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copy">@Copyright 2021 Krushna Hirve</p>
+        </div>
+    </div>
+    <!--js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px"
+            }
+            else {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
